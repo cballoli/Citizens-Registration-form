@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {{>header}}
+    <title>Register</title>
+    <style>  
+        body{  
+  font-family: Calibri, Helvetica, sans-serif;  
+  background-color: rgb(46, 42, 42);  
+        }  
+        .containers {
+            max-width: 900px;
+            margin: auto;  
+    padding: 50px;  
+   background-color: rgb(40, 40, 43);
+   padding-top: 0;
+   overflow: hidden; 
+        }  
+  
+        input[type=text],input[type=number], input[type=password], textarea {  
+  width: 97%;  
+  padding: 15px;  
+  margin: 5px 0 22px 0;  
+  display: inline-block;
+  border-radius: 15px;  
+  border: none;  
+  background: #f1f1f1;  
+        }  
+        input[type=text]:focus, input[type=password]:focus {  
+  background-color: orange;  
+  outline: none;  
+        }  
+        div {  
+            padding: 10px 0;  
+         }  
+        hr {    
+  margin-bottom: 25px;  
+        }  
+        .registerbtn {  
+  background-color: #4CAF50;  
+  color: white;  
+  padding: 16px 20px;  
+  margin: 8px 0; 
+  border-radius: 15px; 
+  border: none;  
+  cursor: pointer;    
+  opacity: 0.9;  
+        }  
+        .registerbtn:hover {  
+  opacity: 1;  
+        }
+
+        .containers center h1 {
+    padding-bottom: 50px;
+    padding-top: 50px;
+        }
+</style> 
+</head>
+<body>
+        {{>navbar}}
+        <div class="containers">
+            <form action="/register" method="POST">    
+                <center>  <h1> Citizens Registeration Form</h1> 
+                    <p>Register Yourself Below</p>
+                    <br>
+                </center>  
+                <hr>  
+                <label> Firstname :</label>   
+                    <input type="text"  name="firstname" placeholder= "Firstname" size="15" required />      
+                <label> Lastname :</label>    
+                    <input type="text"  name="lastname" placeholder="Lastname" size="15"required />
+                <label> Age :</label>    
+                    <input type="number"  name="age" placeholder="age" required />   
+                <div>  
+                    <label>   
+                    Gender :  
+                    </label><br>  
+                        <input type="radio" value="Male" name="gender" checked > Male   
+                        <input type="radio" value="Female" name="gender"> Female   
+                        <input type="radio" value="Other" name="gender"> Other  
+  
+                </div>  
+                    <label>   
+                        Phone :  
+                    </label>     
+                        <input type="text"  name="phone" placeholder="phone no." size="10"/ required>   
+                    Current Address :  
+                        <textarea cols="80" rows="5"  placeholder="Current Address" value="address" name="address" required>  
+                        </textarea>  
+                    <label for="email"><b>Email (Optional):</b></label>  
+                        <input type="text"  placeholder="Enter Email" name="email" required>  
+  
+                    <label for="psw"><b>Password :</b></label>  
+                            <input type="password"  placeholder="Enter Password" name="psw" required>  
+  
+                    <label for="psw-repeat"><b>Confirm Password :</b></label>  
+                        <input type="password"  placeholder="Confirm Password" name="pswrepeat" required>  
+                    <button type="submit" class="registerbtn" value="Register">Register</button>    
+            </form> 
+        </div>    
+</body>
+</html>
+
+
+
+  
+  

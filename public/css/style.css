@@ -1,0 +1,70 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300&family=Noto+Sans+JP&family=Noto+Sans:wght@300;400;500;600&family=Open+Sans:wght@300;400;500;600;700;800&family=Poppins:wght@500&family=Roboto:wght@300;400&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  font-family: "Open Sans", sans-serif;
+  color: rgb(235, 234, 234);
+}
+
+body {
+  background: rgb(40, 40, 43);
+}
+
+.container {
+  max-width: 900px;
+  margin: auto;
+  /* background: darkseagreen; */
+}
+
+.navbar {
+  display: flex;
+  /* color: red; */
+  justify-content: space-between;
+  /* background: rgb(5, 253, 233); */
+  padding-top: 20px;
+  padding-left: 75px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid rgba(169, 167, 167, 0.25);
+}
+
+.logo h1 {
+  font-size: 25px;
+}
+
+.options ul {
+  display: flex;
+  list-style: none;
+  padding-right: 75px;
+}
+
+.options ul li a {
+  padding-right: 20px;
+  text-decoration: none;
+  font-size: 15px;
+  padding-top: 30px;
+  color: rgb(235, 234, 234);
+}
+
+.header-content {
+  text-align: center;
+  padding: 100px 0 10px;
+}
+
+.btn {
+  background-color: #4caf50;
+  color: white;
+  padding: 16px 20px;
+  margin: 8px 0;
+  border-radius: 15px;
+  border: none;
+  cursor: pointer;
+  opacity: 0.9;
+}
+
+.container .btn {
+  margin: auto;
+}
